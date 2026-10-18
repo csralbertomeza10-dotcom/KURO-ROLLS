@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Kuro Rolls - Especialidades</title>
+    <!-- Fuentes elegantes estilo Tulum -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="main-header">
+        <div class="logo">
+            <h1 class="gold-text font-serif">KURO</h1>
+            <p class="subtitle font-sans">SUSHI Y MÁS</p>
+        </div>
+        <nav class="main-nav">
+            <ul class="tabs">
+                <li><a href="#inicio" class="active">Inicio</a></li>
+                <li><a href="#tu-estilo">Tu Estilo</a></li>
+                <li><a href="#catalogo">Especialidades</a></li>
+                <li><a href="#seleccion">Tu Orden (<span id="cart-count">0</span>)</a></li>
+                <li><a href="#mas">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- INICIO -->
+        <section id="inicio" class="tab-content active section-fade">
+            <div class="hero">
+                <div class="hero-content">
+                    <h2 class="hero-title font-serif gold-text">SOMOS TRADICIÓN, SAZÓN Y SABOR EN CADA PLATILLO</h2>
+                </div>
+            </div>
+            <div class="container about-container">
+                <div class="about-text-box">
+                    <h3 class="font-serif gold-text">QUIÉNES SOMOS</h3>
+                    <p>En Kuro Rolls redefinimos la experiencia del sushi mediante una fusión de técnica tradicional y una audaz propuesta de sabores contemporáneos. Somos un concepto culinario nacido de la pasión por la calidad, dedicados a ofrecer platillos con ingredientes premium, un servicio impecable y una atmósfera de sobria elegancia.</p>
+                    <br>
+                    <h3 class="font-serif gold-text">NUESTRA ESCENCIA</h3>
+                    <p>Nuestros procesos de elaboración cumplen con los más altos estándares. Trabajamos exclusivamente con pesca fresca y vegetales seleccionados del día para garantizar una textura y sabor inigualables en cada bocado.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- TU ESTILO -->
+        <section id="tu-estilo" class="tab-content section-fade">
+            <div class="container">
+                <div class="section-header text-center">
+                    <h2 class="font-serif gold-text">Tu Estilo, Tu Rollo</h2>
+                    <p class="font-sans text-muted">Diseña tu experiencia. Base incluida: Arroz (200g) y Alga Nori.</p>
+                </div>
+
+                <form id="custom-roll-form" class="elegant-form">
+                    <!-- PREPARACIÓN Y ARROZ -->
+                    <div class="ingredient-section">
+                        <h3 class="font-serif border-bottom gold-text">Preparación y Arroz</h3>
+                        <div class="ingredient-list">
+                            <div class="ingredient-row">
+                                <div class="ing-info">
+                                    <img src="C:\Users\csral\OneDrive\Escritorio\KURO WEB 2\img\EMPANIZADO1" alt="Capa de empanizado por fuera del rollo frita en aceite y crujiente" class="ing-img-blank">
+                                    <span class="ing-name">Empanizado</span>
+                                    <span class="ing-price">+$5</span>
+                                </div>
+                                <div class="qty-control">
+                                    <button type="button" class="qty-btn btn-minus">-</button>
+                                    <input type="number" class="qty-input" value="0" min="0" data-price="5" data-name="Empanizado">
+                                    <button type="button" class="qty-btn btn-plus">+</button>
+                                </div>
+                            </div>
+                            <div class="ingredient-row">
+                                <div class="ing-info">
+                                    <img src="C:\Users\csral\OneDrive\Escritorio\KURO WEB 2\img\ARROZGOHAN25GR" alt="Arroz estilo gohan extra al rollo en porcion de 25 gramos" class="ing-img-blank">
+                                    <span class="ing-name">Arroz Extra 25g</span>
+                                    <span class="ing-price">+$6</span>
+                                </div>
+                                <div class="qty-control">
+                                    <button type="button" class="qty-btn btn-minus">-</button>
+                                    <input type="number" class="qty-input" value="0" min="0" data-price="6" data-name="Arroz Extra 25g">
+                                    <button type="button" class="qty-btn btn-plus">+</button>
+                                </div>
+                            </div>
+                            <div class="ingredient-row">
+                                <div class="ing-info">
+                                    <img src="C:\Users\csral\OneDrive\Escritorio\KURO WEB 2\img\ARROZGOHAN50GR" alt="Arroz estilo gohan extra al rollo en porcion de 50 gramos" class="ing-img-blank">
+                                    <span class="ing-name">Arroz Extra 50g</span>
+                                    <span class="ing-price">+$10</span>
+                                </div>
+                                <div class="qty-control">
+                                    <button type="button" class="qty-btn btn-minus">-</button>
+                                    <input type="number" class="qty-input" value="0" min="0" data-price="10" data-name="Arroz Extra 50g">
+                                    <button type="button" class="qty-btn btn-plus">+</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- PROTEÍNAS -->
+                    <div class="ingredient-section">
+                        <h3 class="font-serif border-bottom gold-text">Proteínas (30g)</h3>
+                        <div class="ingredient-list">
+                            <div class="ingredient-row"><div class="ing-info"><img src="C:\Users\csral\OneDrive\Escritorio\KURO WEB 2\img\salmoncorte" class="ing-img-blank"><span class="ing-name">Salmón</span><span class="ing-price">+$20</span></div><div class="qty-control"><button type="button" class="qty-btn btn-minus">-</button><input type="number" class="qty-input" value="0" min="0" data-price="20" data-name="Salmón"><button type="button" class="qty-btn btn-plus">+</button></div></div>
+                            <div class="ingredient-row"><div class="ing-info"><img src="C:\Users\csral\OneDrive\Escritorio\KURO WEB 2\img\atuncorte" class="ing-img-blank"><span class="ing-name">Atún</span><span class="ing-price">+$20</span></div><div class="qty-control"><button type="button" class="qty-btn btn-minus">-</button><input type="number" class="qty-input" value="0" min="0" data-price="20" data-name="Atún"><button type="button" class="qty-btn btn-plus">+</button></div></div>
+                            <div class="ingredient-row"><div class="ing-info"><img src="C:\Users\csral\OneDrive\Escritorio\KURO WEB 2\img\arracheracorte" class="ing-img-blank"><span class="ing-name">Arrachera</span><span class="ing-price">+$10</span></div><div class="qty-control"><button type="button" class="qty-btn btn-minus">-</button><input type="number" class="qty-input" value="0" min="0" data-price="10" data-name="Arrachera"><button type="button" class="qty-btn btn-plus">+</button></div></div>
+                            <div class="ingredient-row"><div class="ing-info"><img src="C:\Users\csral\OneDrive\Escritorio\KURO WEB 2\img\camaron mariposa" class="ing-img-blank"><span class="ing-name">Camarón</span><span class="ing-price">+$10</span></div><div class="qty-control"><button type="button" class="qty-btn btn-minus">-</button><input type="number" class="qty-input" value="0" min="0" data-price="10" data-name="Camarón"><button type="button" class="qty-btn btn-plus">+</button></div></div>
+                            <div class="ingredient-row"><div class="ing-info"><img src="C:\Users\csral\OneDrive\Escritorio\KURO WEB 2\img\pollotiras" class="ing-img-blank"><span class="ing-name">Pollo</span><span class="ing-price">+$10</span></div><div class="qty-control"><button type="button" class="qty-btn btn-minus">-</button><input type="number" class="qty-input" value="0" min="0" data-price="10" data-name="Pollo"><button type="button" class="qty-btn btn-plus">+</button></div></div>
+                        </div>
+                    </div>
+
+                    <!-- VEGETALES -->
+                    <div class="ingredient-section">
+                        <h3 class="font-serif border-bottom gold-text">Vegetales (30g)</h3>
+                        <div class="ingredient-list">
+                            <div class="ingredient-row"><div class="ing-info"><img src="C:\Users\csral\OneDrive\Escritorio\KURO WEB 2\img\surimi tiras" class="ing-img-blank"><span class="ing-name">Surimi</span><span class="ing-price">+$5</span></div><div class="qty-control"><button type="button" class="qty-btn btn-minus">-</button><input type="number" class="qty-input" value="0" min="0" data-price="5" data-name="Surimi"><button type="button" class="qty-btn btn-plus">+</button></div></div>
+                            <div class="ingredient-row"><div class="ing-info"><img src="C:\Users\csral\OneDrive\Escritorio\KURO WEB 2\img\pepinotiras" class="ing-img-blank"><span class="ing-name">Pepino</span><span class="ing-price">+$5</span></div><div class="qty-control"><button type="button" class="qty-btn btn-minus">-</button><input type="number" class="qty-input" value="0" min="0" data-price="5" data-name="Pepino"><button type="button" class="qty-btn btn-plus">+</button></div></div>
+                            <div class="ingredient-row"><div class="ing-info"><img src="C:\Users\csral\OneDrive\Escritorio\KURO WEB 2\img\aguacateabanico" class="ing-img-blank"><span class="ing-name">Aguacate</span><span class="ing-price">+$5</span></div><div class="qty-control"><button type="button" class="qty-btn btn-minus">-</button><input type="number" class="qty-input" value="0" min="0" data-price="5" data-name="Aguacate"><button type="button" class="qty-btn btn-plus">+</button></div></div>
+                        </div>
+                    </div>
+
+                    <!-- QUESOS -->
+                    <div class="ingredient-section">
+                        <h3 class="font-serif border-bottom gold-text">Quesos (30g)</h3>
+                        <div class="ingredient-list">
+                            <div class="ingredient-row"><div class="ing-info"><img src="C:\Users\csral\OneDrive\Escritorio\KURO WEB 2\img\philadelphia corte" class="ing-img-blank"><span class="ing-name">Philadelphia</span><span class="ing-price">+$7</span></div><div class="qty-control"><button type="button" class="qty-btn btn-minus">-</button><input type="number" class="qty-input" value="0" min="0" data-price="7" data-name="Queso Philadelphia"><button type="button" class="qty-btn btn-plus">+</button></div></div>
+                            <div class="ingredient-row"><div class="ing-info"><img src="c:\Users\csral\OneDrive\Escritorio\KURO WEB 2\img\manchegocorte" class="ing-img-blank"><span class="ing-name">Manchego</span><span class="ing-price">+$7</span></div><div class="qty-control"><button type="button" class="qty-btn btn-minus">-</button><input type="number" class="qty-input" value="0" min="0" data-price="7" data-name="Queso Manchego"><button type="button" class="qty-btn btn-plus">+</button></div></div>
+                        </div>
+                    </div>
+
+                    <div class="custom-total-preview text-center">
+                        <span class="font-serif">Total de tu creación: <strong class="gold-text">$<span id="custom-live-price">63</span></strong></span>
+                    </div>
+                    <div class="text-center" style="margin-top:30px;">
+                        <button type="button" id="btn-mi-estilo" class="btn-elegant">¡MI ESTILO, MI ROLLO!</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <!-- CATALOGO -->
+        <section id="catalogo" class="tab-content section-fade">
+            <div class="container">
+                <div class="section-header text-center">
+                    <h2 class="font-serif gold-text">Nuestras Especialidades</h2>
+                    <p class="font-sans text-muted">Obras maestras de la casa.</p>
+                </div>
+
+                <div class="specialties-grid">
+                    <!-- Volcano -->
+                    <article class="specialty-item">
+                        <div class="spec-image"><img src="C:\Users\csral\OneDrive\Escritorio\KURO WEB 2\img\volcanoroll" alt=""></div>
+                        <div class="spec-content">
+                            <h3 class="font-serif">Volcano Roll</h3>
+                            <p class="spec-desc font-sans text-muted"><strong>PF:</strong> queso manchego picante.<br><strong>PD:</strong> aguacate, arrachera y queso philadelphia.</p>
+                            <div class="spec-footer">
+                                <span class="spec-price gold-text">$94</span>
+                                <button class="add-to-cart btn-elegant-small" data-name="Volcano Roll" data-price="94">Agregar</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Steak -->
+                    <article class="specialty-item">
+                        <div class="spec-image"><img src="C:\Users\csral\OneDrive\Escritorio\KURO WEB 2\img\steakroll" alt=""></div>
+                        <div class="spec-content">
+                            <h3 class="font-serif">Steak Roll</h3>
+                            <p class="spec-desc font-sans text-muted"><strong>PF:</strong> empanizado.<br><strong>PD:</strong> doble porción de arrachera, queso manchego.</p>
+                            <div class="spec-footer">
+                                <span class="spec-price gold-text">$95</span>
+                                <button class="add-to-cart btn-elegant-small" data-name="Steak Roll" data-price="95">Agregar</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- California -->
+                    <article class="specialty-item">
+                        <div class="spec-image"><img src="C:\Users\csral\OneDrive\Escritorio\KURO WEB 2\img\californiaroll" alt=""></div>
+                        <div class="spec-content">
+                            <h3 class="font-serif">California Roll</h3>
+                            <p class="spec-desc font-sans text-muted"><strong>PF:</strong> ajonjolí bicolor.<br><strong>PD:</strong> surimi, queso philadelphia, pepino y aguacate.</p>
+                            <div class="spec-footer">
+                                <span class="spec-price gold-text">$88</span>
+                                <button class="add-to-cart btn-elegant-small" data-name="California Roll" data-price="88">Agregar</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Jaiba -->
+                    <article class="specialty-item">
+                        <div class="spec-image"><img src="C:\Users\csral\OneDrive\Escritorio\KURO WEB 2\img\jaiba roll" alt=""></div>
+                        <div class="spec-content">
+                            <h3 class="font-serif">Jaiba Roll</h3>
+                            <p class="spec-desc font-sans text-muted"><strong>PF:</strong> empanizado.<br><strong>PD:</strong> surimi, philadelphia y aguacate.</p>
+                            <div class="spec-footer">
+                                <span class="spec-price gold-text">$85</span>
+                                <button class="add-to-cart btn-elegant-small" data-name="Jaiba Roll" data-price="85">Agregar</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Uramaki -->
+                    <article class="specialty-item">
+                        <div class="spec-image"><img src="C:\Users\csral\OneDrive\Escritorio\KURO WEB 2\img\urumakiroll" alt=""></div>
+                        <div class="spec-content">
+                            <h3 class="font-serif">Uramaki Roll</h3>
+                            <p class="spec-desc font-sans text-muted"><strong>PF:</strong> alga nori.<br><strong>PD:</strong> queso philadelphia, aguacate, pepino y camarón.</p>
+                            <div class="spec-footer">
+                                <span class="spec-price gold-text">$92</span>
+                                <button class="add-to-cart btn-elegant-small" data-name="Uramaki Roll" data-price="92">Agregar</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Classic -->
+                    <article class="specialty-item">
+                        <div class="spec-image"><img src="C:\Users\csral\OneDrive\Escritorio\KURO WEB 2\img\classicroll" alt=""></div>
+                        <div class="spec-content">
+                            <h3 class="font-serif">Classic Roll</h3>
+                            <p class="spec-desc font-sans text-muted"><strong>PF:</strong> empanizado.<br><strong>PD:</strong> queso manchego, arrachera, camarón y aguacate.</p>
+                            <div class="spec-footer">
+                                <span class="spec-price gold-text">$98</span>
+                                <button class="add-to-cart btn-elegant-small" data-name="Classic Roll" data-price="98">Agregar</button>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- ADEREZOS -->
+                <div class="section-header text-center" style="margin-top: 60px;">
+                    <h2 class="font-serif gold-text">Acompañamientos y Aderezos</h2>
+                </div>
+                <div class="specialties-grid">
+                    <article class="specialty-item aderezo-item">
+                        <div class="spec-content text-center">
+                            <h3 class="font-serif">Chipotle Cream</h3>
+                            <div class="btn-group-center">
+                                <button class="add-to-cart btn-elegant-small" data-name="Chipotle Cream 1oz" data-price="6">1 oz ($6)</button>
+                                <button class="add-to-cart btn-elegant-small" data-name="Chipotle Cream 2oz" data-price="9">2 oz ($9)</button>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="specialty-item aderezo-item">
+                        <div class="spec-content text-center">
+                            <h3 class="font-serif">Sriracha Cream</h3>
+                            <div class="btn-group-center">
+                                <button class="add-to-cart btn-elegant-small" data-name="Sriracha Cream 1oz" data-price="6">1 oz ($6)</button>
+                                <button class="add-to-cart btn-elegant-small" data-name="Sriracha Cream 2oz" data-price="9">2 oz ($9)</button>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="specialty-item aderezo-item">
+                        <div class="spec-content text-center">
+                            <h3 class="font-serif">Soya Preparada Extra</h3>
+                            <p class="font-sans text-muted" style="font-size:12px;">(Tu rollo ya incluye una porción)</p>
+                            <div class="btn-group-center">
+                                <button class="add-to-cart btn-elegant-small" data-name="Soya Extra 1oz" data-price="5">1 oz ($5)</button>
+                                <button class="add-to-cart btn-elegant-small" data-name="Soya Extra Picante 1oz" data-price="7">Picante ($7)</button>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- SELECCION (CHECKOUT) -->
+        <section id="seleccion" class="tab-content section-fade">
+            <div class="container checkout-container">
+                <div class="section-header text-center">
+                    <h2 class="font-serif gold-text">Tu Orden</h2>
+                </div>
+
+                <div class="cart-box">
+                    <ul id="cart-items" class="cart-list font-sans"></ul>
+                    <div class="cart-total-box">
+                        <h3 class="font-serif">Total Estimado</h3>
+                        <h3 id="cart-total" class="font-serif gold-text">$0</h3>
+                    </div>
+                </div>
+
+                <form id="checkout-form" class="checkout-form">
+                    <div class="input-group">
+                        <label class="font-sans text-muted">Nombre Completo</label>
+                        <input type="text" id="cliente-nombre" required class="elegant-input">
+                    </div>
+                    <div class="input-group">
+                        <label class="font-sans text-muted">Ubicación de Entrega</label>
+                        <input type="text" id="cliente-ubicacion" required class="elegant-input">
+                    </div>
+                    <div class="input-group">
+                        <label class="font-sans text-muted">Fecha y Hora</label>
+                        <input type="text" id="cliente-fecha" required class="elegant-input">
+                    </div>
+                    <div class="input-group">
+                        <label class="font-sans text-muted">Modo de Pago</label>
+                        <select id="cliente-pago" class="elegant-input">
+                            <option value="efectivo">Efectivo</option>
+                            <option value="transferencia">Transferencia</option>
+                            <option value="debito">Tarjeta de Débito</option>
+                            <option value="credito">Tarjeta de Crédito</option>
+                        </select>
+                    </div>
+                    <div class="input-group">
+                        <label class="font-sans text-muted">Teléfono</label>
+                        <input type="tel" id="cliente-telefono" required class="elegant-input">
+                    </div>
+
+                    <div class="text-center" style="margin-top: 40px;">
+                        <button type="button" id="btn-whatsapp" class="btn-elegant w-100">CONFIRMAR Y ENVIAR</button>
+                    </div>
+                </form>
+                <div id="mensaje-agradecimiento" class="text-center" style="display:none; margin-top:30px;"></div>
+            </div>
+        </section>
+
+        <!-- MAS / CONTACTO -->
+        <section id="mas" class="tab-content section-fade">
+            <div class="container text-center">
+                <img src="" alt="Kuro Logo" class="footer-logo">
+                <h2 class="font-serif gold-text" style="max-width:600px; margin: 0 auto 40px auto; line-height: 1.4;">SOMOS TRADICIÓN, SAZÓN Y SABOR EN CADA PLATILLO</h2>
+                
+                <div class="contact-links">
+                    <a href="https://wa.me/524622431013?text=Hola%20Kuro%20Rolls,%20necesito%20soporte%20con..." target="_blank" class="btn-elegant-outline">Soporte y Ayuda</a>
+                    <a href="https://wa.me/524622431013?text=Hola%20Kuro%20Rolls,%20quiero%20comentarles%20sobre%20mi%20experiencia..." target="_blank" class="btn-elegant-outline">Déjanos tus Comentarios</a>
+                    <div class="idea-box">
+                        <p class="font-sans text-muted" style="margin-bottom: 20px;">¿Tienes una idea para un nuevo rollo? Compártela y participa para ganar premios.</p>
+                        <a href="https://wa.me/524622431013?text=Hola%20Kuro%20Rolls,%20%C2%A1tengo%20una%20idea%20genial%20para%20un%20nuevo%20rollo!" target="_blank" class="btn-elegant">Proponer Idea</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer font-sans text-center">
+        <p class="gold-text">KURO ROLLS &copy; 2026</p>
+    </footer>
+
+    <div id="toast-container"></div>
+    <script src="script.js"></script>
+</body>
+</html>
